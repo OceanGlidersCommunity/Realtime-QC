@@ -1,0 +1,9 @@
+# Tests
+
+## Gradient
+
+X_i = \left| V_i - \frac{V_{i+1} + V_{i-1}}{2} \right|
+
+## Spike
+
+X_i = \left| V_i - \frac{V_{i+1} + V_{i-1}}{2} \right| - \left| \frac{V_{i+1} - V_{i-1}}{2} \right|
