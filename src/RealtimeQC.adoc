@@ -1,1 +1,14 @@
 = Realtime Quality Control for Underwater Gliders
+
+== Credits
+
+(List of contributors including brief description of the contribution(s))
+
+== History
+
+This document resulted from discussions initiated at XXXXX with the meeting XXXX.
+
+Followed by asynchronous discussions through online documents between XXXX and XXXXX.
+
+Virtual synchronous meeting on XXX.
+(add participants/contributors on each step.
