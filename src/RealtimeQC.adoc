@@ -1,0 +1,59 @@
+= Realtime Quality Control for Underwater Gliders
+
+== Credits
+
+(List of contributors including brief description of the contribution(s))
+
+== Statement of Purpose
+
+== Inbox - Content to be processed
+
+Here I'll add texts from our discussions that should be processed and organized
+in this new document. Mostly copy-n-paste so we don't loose anything.
+
+
+== Main Document
+
+== History
+
+Virtual synchronous meeting on XXX.
+(add participants/contributors on each step.
+
+=== Virtual workshop
+
+Between May 11 - 15 2021
+
+(I think we had one single sync meeting. Find the correct date/time, participants, and notes taken)
+
+=== Async discussions from Apr 10 2021 to July 19 2021
+Title Best Practices on Realtime QC
+
+=== Called: Main document
+
+Contacted people by email.
+
+Asynchronous discussions through a Google Docs initiated on Feb 2021 and contributions extended up to Oct 2021.
+
+A Google Doc was choosen at that time to reduce the technical barrier and expand
+the participation and contributions.
+
+Participants:
+
+* Guilherme Castelao (Gui), castelao@ucsd.edu, Scripps Institution of Oceanography
+* Soeren Thomsen, soeren.thomsen@locean.ipsl.fr,	LOCEAN, OceanGliders.org Best Practice coordinator
+* Mark Bushnell, mark.bushnell@noaa.gov
+* Pierre Testor
+* Emma Slater, emmer@bodc.ac.uk
+* Justin Buck, juck@bodc.ac.uk
+* Mun Woo, mun.woo@uwa.edu.au,	IMOS Ocean Gliders
+* Thierry Carval, thierry.carval@ifremer.fr, IFREMER
+* Corentin Guyot, corentin.guyot@ifremer.fr, IFREMER
+* Sylvie Pouliquen, Sylvie.Pouliquen@ifremer.fr, IFREMER and Euro*Argo ERIC
+* Victor Turpin, vturpin@ocean*ops.org, OceanOPS
+* Nikolaos Zarokanellos, nzarokanellos@socib.es, SOCIB
+* Christoph Waldmann, waldmann@marum.de, MARUM
+
+
+== References
+
+(just a starting point. Move it to bibtex)
