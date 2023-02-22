@@ -52,6 +52,7 @@ Participants:
 * Victor Turpin, vturpin@ocean*ops.org, OceanOPS
 * Nikolaos Zarokanellos, nzarokanellos@socib.es, SOCIB
 * Christoph Waldmann, waldmann@marum.de, MARUM
+* Claire Gourcuff, claire.gourcuff@euro-argo.eu
 
 
 == References
