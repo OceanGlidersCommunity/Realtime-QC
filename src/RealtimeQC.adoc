@@ -14,6 +14,15 @@ in this new document. Mostly copy-n-paste so we don't loose anything.
 Topics that reached a consensus
 
 === Foccus on underwater gliders
+
+This document is focused on underwater gliders. Other platforms referred to as
+gliders but with a different nature of operation, such as wave gliders could
+probably take advantage of this document but specific issues of those platforms
+will not be covered here, at least at this first iteration.
+
+Mark: Agreed. Good to specify what’s included, and to constrain the scope so that the result is both achievable and sufficiently specific to be useful.
+
+
 === What defines real-time QC?
 === Why do real-time QC?
 === Should we modify the data?
