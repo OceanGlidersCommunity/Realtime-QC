@@ -16,24 +16,48 @@ Topics that reached a consensus
 === What defines real-time QC?
 === Why do real-time QC?
 
-This document is focused on underwater gliders. Other platforms referred to as
-gliders but with a different nature of operation, such as wave gliders could
-probably take advantage of this document but specific issues of those platforms
-will not be covered here, at least at this first iteration.
+To answer this we probably need to think about who is the real-time user? Who needs real-time data and can’t wait for the delayed mode? We need to inquire about what they expect from us. What could we do better for them?
 
-Mark: Agreed. Good to specify what’s included, and to constrain the scope so that the result is both achievable and sufficiently specific to be useful.
+Mark: While I agree with Justin that it’s important to know who’s using the data so that QC can be created to meet their needs, I think there are other factors in play. We’ll never know all of the users or how the data is being used (or misused). Operators (data creators) should desire to ensure data quality - all it takes is one obviously bad data point to inform the world that the operator isn’t conducting adequate RT QC, making all data from that source appear less reliable from the user’s point of view.
 
+Gui: I think that the importance of understanding our users is on better defining priorities. I imagine that everyone doing assimilation is already doing their own QC. As operators, we understand our platforms better, so it should be expected that we could do better than them.  The issue is, what are they expecting? It is common on data assimilation to discard anomalous measurements even if those were valid values to avoid a chock in the simulations. On the other side, a monitoring/alerting system cannot afford to miss a single extreme event. For real-time QC we do the best we can, so we should expect errors. What should be our priority?
 
-=== What defines real-time QC?
-=== Why do real-time QC?
+I agree with Mark that we must do some RT QC. I agree with Justin that we should understand better what is expected from us to serve the community better. Both points are not exclusive and should go together.
+
+(Nikolaos): We should keep in mind that we do real time QC not only for the real-time user but also to ensure that our glider observations have high quality. Sometimes if you have face sensor issues that force you to turn off a sensor to save energy or even recover the glider.
+(Gui): That's true. Good point!
+
+"What should be our priority?" (Nicolaos): I think our priority should be to collect high quality observations and ensure high quality in the performance of the suite glider sensors regardless which is the user...this is a great opportunity to create the guideline for this!!!
+
 === Should we modify the data?
+
+Some procedures include an interpolation. For instance, despike and then interpolate a value back in place. We probably should not remove or manipulate any data at this stage but only add a flag.
+Mark: Agreed
+Nikolaos: Agreed. We should never change the original dataset as we cannot go back and improve our dataset in the future when more advanced methods or procedures are available. I think this is a fundamental principle in my humble opinion that we need to follow 
+
+I see the argument on interpolating and providing data ready to be used, but that might misguide the users. If we don’t apply any sophisticated technique and it is something that anyone could apply themselves, such as a linear interpolation, we should probably don’t modify it.
+
 === Not only automatic procedures
+
+The real-time QC is commonly associated with automatic checks, which indeed better suit the fast response requirements for the real-time data stream, but it should not be limited to automatic procedures only. One of the distinct characteristics of underwater gliders is the close monitoring from pilots and scientists, at least once a day or couple of days, respectively. We should note that and possibly take advantage of that. Potential issues too complex for an automatic procedure could/are identified by pilots. We shall consider the possibility of manual evaluation for near real-time QC.
+
+Mark: AgreedQ Since QARTOD was initiated in 2003 it’s been emphasized that a human in the loop is essential.
+Nikolaos: Agree
+Gui: It seems to have an agreement here, but I would be very much interested in hearing from someone closely involved with Argo if there is any opinion against it.
+
+"or couple of days, respectively" (Gui): Does it happen more than 24 hrs without anyone checking in?
+
+(Claire): I don't see any issue with manual QC in RT, it would only improve the QC! In Argo also there may have some human involvment in some cases (but not always - I would say it is "bonus")
+(Gui): Thanks Claire! I agree with you.
 
 == Main Document
 
 //Underwater gliders only
 This document is focused on underwater gliders, which use changes in buoyancy as the main propulsion, thus characterized by relatively slow propagation velocities.
 Other types of platforms with different natures of operation, such as wave gliders and propelled underwater autonomous vehicles, might take advantage of this document but there is no intention on covering specific aspects of those other platforms.
+
+//Do not modify the original data
+The methods described here augment the original data to guide the user on the decision of what to trust and hence what to use. The raw data must not be modified, but instead  classification quality flags should be aggregated, therefore, allowing users to apply alternative quality control methods without limitations. For instance, advanced methods might be developed in the future, requiring the original data to avoid error propagation. Quality control in this document does not consider calibration but is limited to a classification. Whenever it is considered important to provide the best data possible ready to use, the recommendation is to aggregate such corrected data while preserving the original values directly available.
 
 == History
 
