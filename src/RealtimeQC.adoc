@@ -70,7 +70,7 @@ Participants:
 * Guilherme Castelao (Gui), castelao@ucsd.edu, Scripps Institution of Oceanography
 * Soeren Thomsen, soeren.thomsen@locean.ipsl.fr,	LOCEAN, OceanGliders.org Best Practice coordinator
 * Mark Bushnell, mark.bushnell@noaa.gov
-* Pierre Testor
+* Pierre Testor, pierre.testor@locean.ipsl.fr
 * Emma Slater, emmer@bodc.ac.uk
 * Justin Buck, juck@bodc.ac.uk
 * Mun Woo, mun.woo@uwa.edu.au,	IMOS Ocean Gliders
