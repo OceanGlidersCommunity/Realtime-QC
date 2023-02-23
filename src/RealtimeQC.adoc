@@ -13,7 +13,8 @@ in this new document. Mostly copy-n-paste so we don't loose anything.
 
 Topics that reached a consensus
 
-=== Foccus on underwater gliders
+=== What defines real-time QC?
+=== Why do real-time QC?
 
 This document is focused on underwater gliders. Other platforms referred to as
 gliders but with a different nature of operation, such as wave gliders could
@@ -29,6 +30,10 @@ Mark: Agreed. Good to specify what’s included, and to constrain the scope so t
 === Not only automatic procedures
 
 == Main Document
+
+//Underwater gliders only
+This document is focused on underwater gliders, which use changes in buoyancy as the main propulsion, thus characterized by relatively slow propagation velocities.
+Other types of platforms with different natures of operation, such as wave gliders and propelled underwater autonomous vehicles, might take advantage of this document but there is no intention on covering specific aspects of those other platforms.
 
 == History
 
