@@ -14,26 +14,15 @@ in this new document. Mostly copy-n-paste so we don't loose anything.
 Topics that reached a consensus
 
 === What defines real-time QC?
-=== Why do real-time QC?
-
-To answer this we probably need to think about who is the real-time user? Who needs real-time data and can’t wait for the delayed mode? We need to inquire about what they expect from us. What could we do better for them?
-
-Mark: While I agree with Justin that it’s important to know who’s using the data so that QC can be created to meet their needs, I think there are other factors in play. We’ll never know all of the users or how the data is being used (or misused). Operators (data creators) should desire to ensure data quality - all it takes is one obviously bad data point to inform the world that the operator isn’t conducting adequate RT QC, making all data from that source appear less reliable from the user’s point of view.
-
-Gui: I think that the importance of understanding our users is on better defining priorities. I imagine that everyone doing assimilation is already doing their own QC. As operators, we understand our platforms better, so it should be expected that we could do better than them.  The issue is, what are they expecting? It is common on data assimilation to discard anomalous measurements even if those were valid values to avoid a chock in the simulations. On the other side, a monitoring/alerting system cannot afford to miss a single extreme event. For real-time QC we do the best we can, so we should expect errors. What should be our priority?
-
-I agree with Mark that we must do some RT QC. I agree with Justin that we should understand better what is expected from us to serve the community better. Both points are not exclusive and should go together.
-
-(Nikolaos): We should keep in mind that we do real time QC not only for the real-time user but also to ensure that our glider observations have high quality. Sometimes if you have face sensor issues that force you to turn off a sensor to save energy or even recover the glider.
-(Gui): That's true. Good point!
-
-"What should be our priority?" (Nicolaos): I think our priority should be to collect high quality observations and ensure high quality in the performance of the suite glider sensors regardless which is the user...this is a great opportunity to create the guideline for this!!!
 
 == Main Document
 
 //Underwater gliders only
 This document is focused on underwater gliders, which use changes in buoyancy as the main propulsion, thus characterized by relatively slow propagation velocities.
 Other types of platforms with different natures of operation, such as wave gliders and propelled underwater autonomous vehicles, might take advantage of this document but there is no intention on covering specific aspects of those other platforms.
+
+//Why should we do RTQC?
+There are a wide range of applications that cannot afford waitting for the delayed mode product due to time constraints, such as data assimilation for weather and sea state forecasts, thus requiring a real-time quality control with low latency. Given the diverse environments where gliders are operated and differences among glider models, the operators themselves are the best suited to evaluate their own measurements. Despite that, different users might have different priorities as well as tolerance for what they consider as useful data. While for data assimilation one might unforgive bad measurements and rather use less data with higher quality, a monitoring or alerting system cannot afford wrongfully flaggin and miss a single extreme event. Although there is no one unique optimal flagging for everyone, communication with the final users and understanding of the expectations can help fine tunning the QC criteria and desired informative flags. It should be expected that some users will apply their own QC procedure in addition to the QC from the operators, but all it takes is one obviously bad data point to damage the credibility of the whole dataset. Even before the final users, the glider operation itlsef benefits from a continuous real-time QC. A prompt detection of sensor degradation might trigger an early recovery and swap sensors or the full platform when possible. Catastrophic failures are sometimes preceded by anomalous behaviour, thus high rate of errors should raise the alertness of the pilots. Some spurious measurements are inevitable for any ocean observing system. Despite the constraints imposed by telemetry and pressure for low latency, real-time QC has clear benefits and should be part of all glider operation.
 
 //Do not modify the original data
 The methods described here augment the original data to guide the user on the decision of what to trust and hence what to use. The raw data must not be modified, but instead  classification quality flags should be aggregated, therefore, allowing users to apply alternative quality control methods without limitations. For instance, advanced methods might be developed in the future, requiring the original data to avoid error propagation. Quality control in this document does not consider calibration but is limited to a classification. Whenever it is considered important to provide the best data possible ready to use, the recommendation is to aggregate such corrected data while preserving the original values directly available.
