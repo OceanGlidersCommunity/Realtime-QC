@@ -24,6 +24,10 @@ There are a wide range of applications that cannot afford waitting for the delay
 
 // What defines real-time?
 
+Points that we agree to guide the writing:
+- Real-time QC is done promptly, as soon as possible, thus automatic procedures are better for that job.
+- There is so much information available on real-time, due to telemetry limitations. Therefore, real-time QC can't expect ideal conditions, but does the best it can with the resources available.
+
 
 //Do not modify the original data
 The methods described here augment the original data to guide the user on the decision of what to trust and hence what to use. The raw data must not be modified, but instead  classification quality flags should be aggregated, therefore, allowing users to apply alternative quality control methods without limitations. For instance, advanced methods might be developed in the future, requiring the original data to avoid error propagation. Quality control in this document does not consider calibration but is limited to a classification. Whenever it is considered important to provide the best data possible ready to use, the recommendation is to aggregate such corrected data while preserving the original values directly available.
