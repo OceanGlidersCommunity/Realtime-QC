@@ -73,6 +73,11 @@ Participants:
 * Claire Gourcuff, claire.gourcuff@euro-argo.eu
 
 
+== Contributors
+
+*  Schmechtig (@catsch), CNRS
+	 PR-1: Details on Argo's Nitrate test
+
 == References
 
 (just a starting point. Move it to bibtex)
