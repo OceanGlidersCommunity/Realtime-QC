@@ -1,4 +1,5 @@
 = Realtime Quality Control for Underwater Gliders
+:stem: latexmath
 
 == Credits
 
