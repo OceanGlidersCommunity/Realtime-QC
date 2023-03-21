@@ -80,6 +80,7 @@ List of all contributors an their contributions.
 *  Schmechtig (@catsch), CNRS
    PR-1: Details on Argo's Nitrate test
 
+[bibliography]
 == References
 
-(just a starting point. Move it to bibtex)
+* [[BGC_nitrate]] Johnson Kenneth, Maurer Tanya, Plant Joshua, Bittig Henry, Schallenberg Christina, Schmechtig Catherine (2021). BGC-Argo quality control manual for nitrate concentration. https://doi.org/10.13155/84370
