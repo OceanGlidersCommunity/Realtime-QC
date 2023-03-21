@@ -34,6 +34,16 @@ Complex cases, otherwise missed by the automatic procedures, but identified by t
 
 include::tests.adoc[leveloffset=+1]
 
+== Procedures
+
+==== Argo BGC
+
+9. Spike test (median)
+
+Red Sea and Mediterranean Sea, flag 4 if test value > 1 micromole/kg
+
+Other places, flag 4 if test value > 5 micromole/kg
+
 == History
 
 Virtual synchronous meeting on XXX.
