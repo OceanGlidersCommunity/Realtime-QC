@@ -1,29 +1,29 @@
-== Tests
+= Tests
 
-=== Global Range
+== Global Range
 
-=== Gradient
+== Gradient
 
 [stem]
 ++++
 X_i = \left| V_i - \frac{V_{i+1} + V_{i-1}}{2} \right|
 ++++
 
-=== Spike
+== Spike
 
 [stem]
 ++++
 X_i = \left| V_i - \frac{V_{i+1} + V_{i-1}}{2} \right| - \left| \frac{V_{i+1} - V_{i-1}}{2} \right|
 ++++
 
-=== Digit Rollover
+== Digit Rollover
 
 [stem]
 ++++
 X_i = V_i - V_{i-1}
 ++++
 
-=== Spike - Median
+== Spike - Median
 
 Proposed at <<BGC_nitrate>>
 

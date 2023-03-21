@@ -32,6 +32,8 @@ The methods described here augment the original data to guide the user on the de
 Real-time QC is commonly associated with automatic checks, which indeed better suit the fast response requirements for a real-time data stream, but it should not be limited to automatic procedures. One of the distinct characteristics of underwater gliders is the close monitoring from pilots and scientists as frequently as hourly to at most every couple of days. 
 Complex cases, otherwise missed by the automatic procedures, but identified by the operators should be flagged and updated in the data stream. With the assumption of a low rate of mistakes by the automatic procedure, it is best to do not hold the automatic procedure for manual confirmation, but employ a fast automatic assessment and stream a posterior correction when necessary.
 
+include::tests.adoc[leveloffset=+1]
+
 == History
 
 Virtual synchronous meeting on XXX.
