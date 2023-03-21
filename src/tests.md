@@ -1,5 +1,7 @@
 # Tests
 
+## Global Range
+
 ## Gradient
 
 X_i = \left| V_i - \frac{V_{i+1} + V_{i-1}}{2} \right|
