@@ -29,5 +29,5 @@ Proposed at <<BGC_nitrate>>
 
 [stem]
 ++++
-X_i = \left| V_2 - median(V_0, V_1, V_2, V_3, V_4, V_5) \right|
+X_i = \left| V_i - median(V_{i-2}, V_{i-1}, V_i, V_{i+1}, V_{i+2}) \right|
 ++++
