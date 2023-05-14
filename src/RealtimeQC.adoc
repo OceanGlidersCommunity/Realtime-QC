@@ -14,8 +14,6 @@ in this new document. Mostly copy-n-paste so we don't loose anything.
 
 Topics that reached a consensus
 
-=== What defines real-time QC?
-
 == Main Document
 
 //Underwater gliders only
@@ -24,6 +22,13 @@ Other types of platforms with different natures of operation, such as wave glide
 
 //Why should we do RTQC?
 There are a wide range of applications that cannot afford waitting for the delayed mode product due to time constraints, such as data assimilation for weather and sea state forecasts, thus requiring a real-time quality control with low latency. Given the diverse environments where gliders are operated and differences among glider models, the operators themselves are the best suited to evaluate their own measurements. Despite that, different users might have different priorities as well as tolerance for what they consider as useful data. While for data assimilation one might unforgive bad measurements and rather use less data with higher quality, a monitoring or alerting system cannot afford wrongfully flaggin and miss a single extreme event. Although there is no one unique optimal flagging for everyone, communication with the final users and understanding of the expectations can help fine tunning the QC criteria and desired informative flags. It should be expected that some users will apply their own QC procedure in addition to the QC from the operators, but all it takes is one obviously bad data point to damage the credibility of the whole dataset. Even before the final users, the glider operation itlsef benefits from a continuous real-time QC. A prompt detection of sensor degradation might trigger an early recovery and swap sensors or the full platform when possible. Catastrophic failures are sometimes preceded by anomalous behaviour, thus high rate of errors should raise the alertness of the pilots. Some spurious measurements are inevitable for any ocean observing system. Despite the constraints imposed by telemetry and pressure for low latency, real-time QC has clear benefits and should be part of all glider operation.
+
+// What defines real-time?
+
+Points that we agree to guide the writing:
+- Real-time QC is done promptly, as soon as possible, thus automatic procedures are better for that job.
+- There is so much information available on real-time, due to telemetry limitations. Therefore, real-time QC can't expect ideal conditions, but does the best it can with the resources available.
+
 
 //Do not modify the original data
 The methods described here augment the original data to guide the user on the decision of what to trust and hence what to use. The raw data must not be modified, but instead  classification quality flags should be aggregated, therefore, allowing users to apply alternative quality control methods without limitations. For instance, advanced methods might be developed in the future, requiring the original data to avoid error propagation. Quality control in this document does not consider calibration but is limited to a classification. Whenever it is considered important to provide the best data possible ready to use, the recommendation is to aggregate such corrected data while preserving the original values directly available.
