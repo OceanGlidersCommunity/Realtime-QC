@@ -1,4 +1,5 @@
 = Realtime Quality Control for Underwater Gliders
+:stem: latexmath
 
 == Credits
 
@@ -30,6 +31,18 @@ The methods described here augment the original data to guide the user on the de
 //Do not limit to automatic procedures
 Real-time QC is commonly associated with automatic checks, which indeed better suit the fast response requirements for a real-time data stream, but it should not be limited to automatic procedures. One of the distinct characteristics of underwater gliders is the close monitoring from pilots and scientists as frequently as hourly to at most every couple of days. 
 Complex cases, otherwise missed by the automatic procedures, but identified by the operators should be flagged and updated in the data stream. With the assumption of a low rate of mistakes by the automatic procedure, it is best to do not hold the automatic procedure for manual confirmation, but employ a fast automatic assessment and stream a posterior correction when necessary.
+
+include::tests.adoc[leveloffset=+1]
+
+== Procedures
+
+==== Argo BGC
+
+9. Spike test (median)
+
+Red Sea and Mediterranean Sea, flag 4 if test value > 1 micromole/kg
+
+Other places, flag 4 if test value > 5 micromole/kg
 
 == History
 
@@ -73,6 +86,14 @@ Participants:
 * Claire Gourcuff, claire.gourcuff@euro-argo.eu
 
 
+== Contributors
+
+List of all contributors an their contributions.
+
+*  Schmechtig (@catsch), CNRS
+   PR-1: Details on Argo's Nitrate test
+
+[bibliography]
 == References
 
-(just a starting point. Move it to bibtex)
+* [[BGC_nitrate]] Johnson Kenneth, Maurer Tanya, Plant Joshua, Bittig Henry, Schallenberg Christina, Schmechtig Catherine (2021). BGC-Argo quality control manual for nitrate concentration. https://doi.org/10.13155/84370
