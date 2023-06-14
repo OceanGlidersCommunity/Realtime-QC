@@ -96,4 +96,5 @@ List of all contributors an their contributions.
 [bibliography]
 == References
 
+* [[GTSPP:1990]] Intergovernmental Oceanographic Commission (1990) GTSPP Real-Time Quality Control Manual. Paris, France, UNESCO, 128pp. (Intergovernmental Oceanographic Commission Manuals and Guides; 22).
 * [[BGC_nitrate]] Johnson Kenneth, Maurer Tanya, Plant Joshua, Bittig Henry, Schallenberg Christina, Schmechtig Catherine (2021). BGC-Argo quality control manual for nitrate concentration. https://doi.org/10.13155/84370
