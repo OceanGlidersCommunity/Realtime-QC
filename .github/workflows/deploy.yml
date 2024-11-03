@@ -1,7 +1,9 @@
-name: deploy-book
+name: deploy
 
 on:
   workflow_dispatch:
+  push:
+    branches: [ main ]
 
 jobs:
   deploy-book:
@@ -20,16 +22,6 @@ jobs:
           cache: true
           frozen: true
 
-      # Install dependencies
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v3
-        with:
-          python-version: 3.11
-
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-
       # (optional) Cache your executed notebooks between runs
       # if you have config:
       # execute:
@@ -37,21 +29,21 @@ jobs:
       - name: cache executed notebooks
         uses: actions/cache@v3
         with:
-          path: _build/.jupyter_cache
-          key: jupyter-book-cache-${{ hashFiles('requirements.txt') }}
+          path: rtqc/_build/.jupyter_cache
+          key: jupyter-book-cache-${{ hashFiles('pixi.toml') }}
 
       # Build the book
       - name: Build the book
         run: |
-          jupyter-book build .
+          pixi run jupyter-book build rtqc
 
       # Upload the book's HTML as an artifact
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "_build/html"
+          path: "rtqc/_build/html"
 
       # Deploy the book's HTML to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4

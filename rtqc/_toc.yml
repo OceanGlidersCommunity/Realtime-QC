@@ -6,6 +6,5 @@ root: intro
 options:
   numbered: true
 chapters:
-- file: realtimeqc
 - file: qc_tests
 - file: references
