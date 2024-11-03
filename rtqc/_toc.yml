@@ -4,6 +4,9 @@
 format: jb-book
 root: intro
 chapters:
+- file: realtimeqc
 - file: markdown
 - file: notebooks
 - file: markdown-notebooks
+- file: qc_tests
+- file: references
