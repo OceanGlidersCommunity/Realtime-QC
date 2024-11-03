@@ -33,7 +33,7 @@ jobs:
       # Build the book
       - name: Build the book
         run: |
-          jupyter-book build rtqc
+          pixi run jupyter-book build rtqc
 
       # Upload the book's HTML as an artifact
       - name: Upload artifact
