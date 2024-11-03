@@ -4,6 +4,8 @@
 
 (List of contributors including brief description of the contribution(s))
 
+[List of contributors](section-contributors)
+
 ## Statement of Purpose
 
 ## Inbox - Content to be processed
@@ -84,7 +86,7 @@ Participants:
 * John Kerfoot, kerfoot@marine.rutgers.edu
 * Claire Gourcuff, claire.gourcuff@euro-argo.eu
 
-
+(section-contributors)=
 ## Contributors
 
 List of all contributors an their contributions.
@@ -92,6 +94,7 @@ List of all contributors an their contributions.
 *  Schmechtig (@catsch), CNRS
    PR-1: Details on Argo's Nitrate test
 
+(bibliography)=
 ## References
 ```{bibliography}
 ```
