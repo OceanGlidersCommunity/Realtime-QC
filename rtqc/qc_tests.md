@@ -1,38 +1,45 @@
-= Tests
+---
+jupytext:
+  text_representation:
+    extension: .md
+    format_name: myst
+---
 
-== Global Range
+# Tests
 
-== Gradient
+## Global Range
 
-[stem]
-++++
-X_i = \left| V_i - \frac{V_{i+1} + V_{i-1}}{2} \right|
-++++
+## Gradient
 
-== Spike
+```{math}
+:label: gradient
+  y_i = \left| x_i - \frac{x_{i+1} + x_{i-1}}{2} \right|
+```
 
-The spike check was first proposed in GTSPP:1990 and defined as:
+## Spike
 
-[stem]
-++++
-X_i = \left| V_i - \frac{V_{i+1} + V_{i-1}}{2} \right| - \left| \frac{V_{i-1} - V_{i+1}}{2} \right|,
-++++
+The spike check was first proposed in {cite}`GTSPP:1990` and defined as:
 
-where $i$ is the time index, i.e. it assumed the data $V$ was sorted by time.
+```{math}
+:label: spike
+  y_i = \left| x_i - \frac{x_{i+1} + x_{i-1}}{2} \right| - \left| \frac{x_{i-1} - x_{i+1}}{2} \right|,
+```
+
+where $i$ is the time index, i.e. it assumed the data $x$ was sorted by time.
 This check is largely used without any modification.
 
-== Digit Rollover
+## Digit Rollover
 
-[stem]
-++++
-X_i = V_i - V_{i-1}
-++++
+```{math}
+:label: digit_rollover
+  y_i = x_i - x_{i-1}
+```
 
-== Spike - Median
+## Spike - Median
 
-Proposed at <<BGC_nitrate>>
+Proposed by {cite}`johnson2021bgc`
 
-[stem]
-++++
-X_i = \left| V_i - median(V_{i-2}, V_{i-1}, V_i, V_{i+1}, V_{i+2}) \right|
-++++
+```{math}
+:label: spike-median
+  y_i = \left| x_i - median(x_{i-2}, x_{i-1}, x_i, x_{i+1}, x_{i+2}) \right|
+```
