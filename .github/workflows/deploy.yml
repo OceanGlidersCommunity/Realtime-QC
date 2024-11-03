@@ -27,8 +27,8 @@ jobs:
       - name: cache executed notebooks
         uses: actions/cache@v3
         with:
-          path: _build/.jupyter_cache
-          key: jupyter-book-cache-${{ hashFiles('requirements.txt') }}
+          path: rtqc/_build/.jupyter_cache
+          key: jupyter-book-cache-${{ hashFiles('pixi.toml') }}
 
       # Build the book
       - name: Build the book
