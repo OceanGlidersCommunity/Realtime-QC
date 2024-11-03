@@ -1,22 +1,21 @@
-= Realtime Quality Control for Underwater Gliders
-:stem: latexmath
+# Realtime Quality Control for Underwater Gliders
 
-== Credits
+## Credits
 
 (List of contributors including brief description of the contribution(s))
 
-== Statement of Purpose
+## Statement of Purpose
 
-== Inbox - Content to be processed
+## Inbox - Content to be processed
 
 Here I'll add texts from our discussions that should be processed and organized
 in this new document. Mostly copy-n-paste so we don't loose anything.
 
 Topics that reached a consensus
 
-=== What defines real-time QC?
+### What defines real-time QC?
 
-== Main Document
+## Main Document
 
 //Underwater gliders only
 This document is focused on underwater gliders, which use changes in buoyancy as the main propulsion, thus characterized by relatively slow propagation velocities.
@@ -34,9 +33,9 @@ Complex cases, otherwise missed by the automatic procedures, but identified by t
 
 include::tests.adoc[leveloffset=+1]
 
-== Procedures
+## Procedures
 
-==== Argo BGC
+#### Argo BGC
 
 9. Spike test (median)
 
@@ -44,21 +43,21 @@ Red Sea and Mediterranean Sea, flag 4 if test value > 1 micromole/kg
 
 Other places, flag 4 if test value > 5 micromole/kg
 
-== History
+## History
 
 Virtual synchronous meeting on XXX.
 (add participants/contributors on each step.
 
-=== Virtual workshop
+### Virtual workshop
 
 Between May 11 - 15 2021
 
 (I think we had one single sync meeting. Find the correct date/time, participants, and notes taken)
 
-=== Async discussions from Apr 10 2021 to July 19 2021
+### Async discussions from Apr 10 2021 to July 19 2021
 Title Best Practices on Realtime QC
 
-=== Called: Main document
+### Called: Main document
 
 Contacted people by email.
 
@@ -86,7 +85,7 @@ Participants:
 * Claire Gourcuff, claire.gourcuff@euro-argo.eu
 
 
-== Contributors
+## Contributors
 
 List of all contributors an their contributions.
 
