@@ -3,7 +3,7 @@
 
 title: Realtime Quality Control for Underwater Gliders
 author: OceanGliders RTQC team
-logo: rtqc/images/logo-ocean-gliders.png
+logo: images/logo-ocean-gliders.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
