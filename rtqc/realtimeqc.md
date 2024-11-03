@@ -80,7 +80,7 @@ Participants:
 * Thierry Carval, thierry.carval@ifremer.fr, IFREMER
 * Corentin Guyot, corentin.guyot@ifremer.fr, IFREMER
 * Sylvie Pouliquen, Sylvie.Pouliquen@ifremer.fr, IFREMER and Euro*Argo ERIC
-* Victor Turpin, vturpin@ocean*ops.org, OceanOPS
+* Victor Turpin, vturpin@oceanops.org, OceanOPS
 * Nikolaos Zarokanellos, nzarokanellos@socib.es, SOCIB
 * Christoph Waldmann, waldmann@marum.de, MARUM
 * John Kerfoot, kerfoot@marine.rutgers.edu
