@@ -93,8 +93,3 @@ List of all contributors an their contributions.
 
 *  Schmechtig (@catsch), CNRS
    PR-1: Details on Argo's Nitrate test
-
-(bibliography)=
-## References
-```{bibliography}
-```
